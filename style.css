@@ -223,7 +223,7 @@ img{
 }
 
  .banniere{
-    height: calc(100vh - 7rem);
+    /* height: calc(100vh - 7rem); */
     background-color: beige;
     overflow: hidden;
     position: relative;
@@ -295,7 +295,7 @@ img{
 
 @media only screen and (max-width:567px){
     .banniere{
-        height: calc(90vh -7rem);
+        height: calc(90vh - 7rem);
     }
 
     .banniere-contenu .gauche{
@@ -560,3 +560,5 @@ img{
         row-gap: 2rem;
     }
 }
+
+/* service */
