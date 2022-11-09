@@ -562,3 +562,107 @@ img{
 }
 
 /* service */
+
+
+.cart{
+    grid-template-areas:    "accessoire-tenue    accessoire-electronique"
+                            "accessoire-impression   accessoire-impression"
+                            "electrique  tomate   ananas";
+    grid-template-rows: 50px 1fr 30px;
+    grid-template-columns: 150px 1fr;
+}
+
+#accessoire-tenue{
+    grid-area: accessoire-tenue;
+}
+
+#accessoire-impression{
+    grid-area: accessoire-impression;
+}
+
+#accessoire-electronique{
+    grid-area: accessoire-electronique;
+}
+
+#electrique{
+    grid-area: electrique;
+}
+
+#tomate{
+    grid-area: tomate;
+}
+
+#ananas{
+    grid-area: ananas;
+}
+
+.cart{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 10rem;
+}
+
+.cart>div{
+    width: 30rem;
+    gap: 5rem;
+    margin: 5rem;
+    border: 1px solid grey;
+}
+
+.cart>div img{
+    width: 27rem;
+    height: 30rem;
+    border-bottom: 1px solid black;
+}
+.cart>div div p{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: gray;
+    text-decoration: none;
+}
+
+
+/* boutique */
+
+
+.categorie-boutique{
+    /*display: grid;*/
+    /*grid-template-columns: repeat(5, 1fr);*/
+    /*grid-template-rows: repeat(8, 25vw);*/
+    gap: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.categorie{
+    overflow: hidden;
+}
+
+.categorie-boutique img{
+    object-fit: cover;
+    height: 15rem;
+    width: 15rem;
+}
+
+
+.categorie-boutique div{
+    box-shadow: 0 0 0 1px rgba(141, 141, 140, .50);
+    transition: all 500ms ease-in-out;
+}
+.categorie-boutique div:hover{
+    transform: scale(1.8);
+    z-index: 100;
+}
+
+.categorie-boutiq/*ue .cart-boutique{
+    width: 19rem;
+    height: auto;
+    padding-bottom: 10rem;
+}*/
