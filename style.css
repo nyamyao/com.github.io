@@ -223,7 +223,7 @@ img{
 }
 
  .banniere{
-    /* height: calc(100vh - 7rem); */
+    height: calc(100vh - 7rem);
     background-color: beige;
     overflow: hidden;
     position: relative;
